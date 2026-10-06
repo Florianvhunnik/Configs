@@ -1,0 +1,31 @@
+# yaml-language-server: $schema= https://raw.githubusercontent.com/jesseduffield/lazygit/master/schema/config.json
+
+gui:
+  spinner:
+    rate: 83
+    frames: ['', '', '', '', '', '']
+  language: "en"
+  branchColorPatterns:
+    '^[Bb]ugfix': 'red'
+    '^[Ff]eature': 'green'
+    '^[Pp]roject': 'blue'
+    '^develop': 'magenta'
+    '^[Rr]elease': 'cyan'
+    '^(master|main)': 'yellow'
+  theme:
+    activeBorderColor:
+      - blue
+      - bold
+    inactiveBorderColor:
+      - black
+      - bold
+    selectedLineBgColor:
+      - reverse
+  customIcons:
+    extensions:
+      ".http":
+        icon: "\U000F109B"
+        color: '#5050FF'
+notARepository: quit
+git:
+  autoFetch: true
