@@ -138,7 +138,7 @@ workspaces:
     keep_alive: true
   # Teams | Outlook
   - name: '4'
-    display_name: 'nf-fa-comments'
+    display_name: 'nf-md-robot'
     bind_to_monitor: 0
     keep_alive: true
   # VS Code
@@ -158,7 +158,7 @@ workspaces:
     keep_alive: true
   # ChatGPT
   - name: '8'
-    display_name: 'nf-md-robot'
+    display_name: 'nf-fa-comments'
     bind_to_monitor: 1
     keep_alive: true
   # Default empty for other apps
@@ -217,7 +217,7 @@ window_rules:
   # 4
   - commands: ["move --workspace 4", "focus --workspace 4"]
     match:
-      - window_process: { regex: "(?i)^(ms\\-teams|olk)$" }
+      - window_process: { regex: '(?i)^ChatGPT$' }
 
   # 5
   - commands: ["move --workspace 5", "focus --workspace 5"]
@@ -237,7 +237,7 @@ window_rules:
   # 8
   - commands: ["move --workspace 8", "focus --workspace 8"]
     match:
-      - window_process: { regex: '(?i)^ChatGPT$' }
+      - window_process: { regex: "(?i)^(ms\\-teams|olk)$" }
 
   # 9
   - commands: ["move --workspace 9", "focus --workspace 9"]
