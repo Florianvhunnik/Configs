@@ -243,9 +243,15 @@ window_rules:
       - window_process: { regex: "(?i)^(ms\\-teams|olk)$" }
 
   # 9
-  - commands: ["move --workspace 9", "focus --workspace 9"]
+  #- commands: ["move --workspace 9", "focus --workspace 9"]
+  #  match:
+  #    - window_process: { not_regex: '(?i)^(msedge|WindowsTerminal|Taskmgr|explorer|Everything|ms-teams|olk|Code|rider64|webstorm64|Docker Desktop|ChatGPT)$' }
+
+  - commands: ['set-floating']
     match:
-      - window_process: { not_regex: '(?i)^(msedge|WindowsTerminal|Taskmgr|explorer|Everything|ms-teams|olk|Code|rider64|webstorm64|Docker Desktop|ChatGPT)$' }
+      - window_class: { equals: '#32770' }
+      - window_process: { regex: '(?i)^(rider64|webstorm64)$' }
+        window_class: { equals: 'SunAwtDialog' }
 
 
 binding_modes:
