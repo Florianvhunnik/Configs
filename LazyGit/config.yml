@@ -5,6 +5,7 @@ gui:
   showNumstatInFilesView: true
   showDivergenceFromBaseBranch: arrowAndNumber
   fileTreeSortCaseSensitive: false
+  commitHashLength: 0
 
   spinner:
     rate: 83
