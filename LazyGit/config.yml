@@ -6,6 +6,7 @@ gui:
   showDivergenceFromBaseBranch: arrowAndNumber
   fileTreeSortCaseSensitive: false
   commitHashLength: 0
+  expandFocusedSidePanel: true
 
   spinner:
     rate: 83
