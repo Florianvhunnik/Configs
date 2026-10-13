@@ -7,7 +7,9 @@ gui:
   fileTreeSortCaseSensitive: false
   commitHashLength: 0
   expandFocusedSidePanel: true
-
+  timeFormat: "02-01-2006 15:04"
+  shortTimeFormat: "02-01-2006 15:04"
+  
   spinner:
     rate: 83
     frames: ['', '', '', '', '', '']
