@@ -15,8 +15,11 @@ gui:
     frames: ['', '', '', '', '', '']
   language: "en"
   branchColorPatterns:
+    '(?i)^refactor([/_-]|$)': white
     '(?i)^bugfix([/_-]|$)': red
+    '(?i)^fix([/_-]|$)': red
     '(?i)^feature([/_-]|$)': green
+    '(?i)^feat([/_-]|$)': green
     '(?i)^project([/_-]|$)': blue
     '(?i)^develop$': magenta
     '(?i)^release([/_-]|$)': cyan
