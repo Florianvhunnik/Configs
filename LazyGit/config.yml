@@ -9,21 +9,10 @@ gui:
   expandFocusedSidePanel: true
   timeFormat: "02-01-2006 15:04"
   shortTimeFormat: "02-01-2006 15:04"
-  
   spinner:
     rate: 83
     frames: ['', '', '', '', '', '']
   language: "en"
-  branchColorPatterns:
-    '(?i)^refactor([/_-]|$)': white
-    '(?i)^bugfix([/_-]|$)': red
-    '(?i)^fix([/_-]|$)': red
-    '(?i)^feature([/_-]|$)': green
-    '(?i)^feat([/_-]|$)': green
-    '(?i)^project([/_-]|$)': blue
-    '(?i)^develop$': magenta
-    '(?i)^release([/_-]|$)': cyan
-    '(?i)^(master|main)$': yellow
   theme:
     activeBorderColor:
       - blue
@@ -32,6 +21,16 @@ gui:
       - default
     selectedLineBgColor:
       - reverse
+    branchColorPatterns:
+      '(?i)^refactor([/_-]|$)': white
+      '(?i)^bugfix([/_-]|$)': red
+      '(?i)^fix([/_-]|$)': red
+      '(?i)^feature([/_-]|$)': green
+      '(?i)^feat([/_-]|$)': green
+      '(?i)^project([/_-]|$)': blue
+      '(?i)^develop$': magenta
+      '(?i)^release([/_-]|$)': cyan
+      '(?i)^(master|main)$': yellow
   customIcons:
     extensions:
       ".http":
