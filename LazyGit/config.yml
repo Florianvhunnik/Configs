@@ -22,14 +22,12 @@ gui:
     selectedLineBgColor:
       - reverse
     branchColorPatterns:
+      '(?i)^(docs|release)([/_-]|$)': cyan
       '(?i)^refactor([/_-]|$)': white
-      '(?i)^bugfix([/_-]|$)': red
-      '(?i)^fix([/_-]|$)': red
-      '(?i)^feature([/_-]|$)': green
-      '(?i)^feat([/_-]|$)': green
+      '(?i)^(bugfix|fix)([/_-]|$)': red
+      '(?i)^feat(ure)?([/_-]|$)': green
       '(?i)^project([/_-]|$)': blue
       '(?i)^develop$': magenta
-      '(?i)^release([/_-]|$)': cyan
       '(?i)^(master|main)$': yellow
   customIcons:
     extensions:
