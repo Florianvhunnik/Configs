@@ -151,9 +151,9 @@ workspaces:
     display_name: 'nf-fa-code'
     bind_to_monitor: 1
     keep_alive: true
-  # Docker
+  # Obsidian
   - name: '7'
-    display_name: 'nf-dev-docker'
+    display_name: 'nf-md-diamond_stone'
     bind_to_monitor: 1
     keep_alive: true
   # ChatGPT
@@ -235,7 +235,7 @@ window_rules:
   # 7
   - commands: ["move --workspace 7", "focus --workspace 7"]
     match:
-      - window_process: { regex: '(?i)^Docker Desktop$' }
+      - window_process: { regex: '(?i)^Obsidian$' }
 
   # 8
   - commands: ["move --workspace 8", "focus --workspace 8"]
@@ -245,7 +245,7 @@ window_rules:
   # 9
   #- commands: ["move --workspace 9", "focus --workspace 9"]
   #  match:
-  #    - window_process: { not_regex: '(?i)^(msedge|WindowsTerminal|Taskmgr|explorer|Everything|ms-teams|olk|Code|rider64|webstorm64|Docker Desktop|ChatGPT)$' }
+  #    - window_process: { not_regex: '(?i)^(msedge|WindowsTerminal|Taskmgr|explorer|Everything|ms-teams|olk|Code|rider64|webstorm64|Obsidian|ChatGPT)$' }
 
   - commands: ['set-floating']
     match:
