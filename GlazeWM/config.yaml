@@ -153,12 +153,12 @@ workspaces:
     keep_alive: true
   # Obsidian
   - name: '7'
-    display_name: 'nf-md-diamond_stone'
+    display_name: 'nf-md-notebook_outline'
     bind_to_monitor: 1
     keep_alive: true
   # ChatGPT
   - name: '8'
-    display_name: 'nf-fa-comments'
+    display_name: 'nf-fa-th_large'
     bind_to_monitor: 1
     keep_alive: true
   # Default empty for other apps
