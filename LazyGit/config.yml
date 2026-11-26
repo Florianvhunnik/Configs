@@ -37,5 +37,6 @@ gui:
 notARepository: prompt
 git:
   autoFetch: true
+  autoForwardBranches: none
 os:
   editPreset: vscode
